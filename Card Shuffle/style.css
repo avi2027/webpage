@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section{
+	background: black;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+section div{
+	height: 200px;
+	background: #F5DEB3;
+	color: #DC143C;
+	padding: 30px;
+	border-radius: 14px;
+	min-width: 250px;
+	box-shadow: 12px 0px 32px -12px;
+	margin-left: -130px;
+	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+	font-family: verdana;
+	font-weight: bold;
+}
+
+section div:hover{
+	transform: translateY(-16px) rotate(3deg);
+}
+
+section div:hover~div{
+	transform: translateX(130px);
+}
